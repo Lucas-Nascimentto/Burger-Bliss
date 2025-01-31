@@ -689,7 +689,7 @@ select#mesa {
     }
 
     .caixa-principal-quantidade-botao-somar {
-        top: -1rem;
+        top: -0.5rem;
     }
 
 }
