@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Bliss</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-container">
+        <img src="./img/logo.png" alt="Logo">
+        <div class="header-container-nome">
+            <h2 id="hamburgueria-titulo">Burger Bliss</h2>
+            <p id="hamburgueria"><span class="header-container-texto">-----------</span> Hamburgueria<span
+                    class="header-container-texto">-----------</span></p>
+        </div>
+        <div class=" header-container-navegadores">
+            <a href="#hamburgueres" id="home">Home</a>
+            <a href="#hamburgueres">Hambúrgueres</a>
+            <a href="#bebidas">Bebidas</a>
+            <a href="#entradas">Entradas</a>
+            <a href="#pedido">Pedido</a>
+        </div>
+    </div>
+
+
+    <h1 id="hamburgueres">Hambúrgueres</h1>
+
+
+    <div class="caixa-principal-esquerda-hamburgueres">
+        <div>
+            <h3>Oxente <span class="caixa-principal-preco">19,99</span></h3>
+            <p>Pão de batata, carne de hambúrguer, frango desfiado, queijo coalho na chapa, cebola caramelizada no molho
+                de orégano e alface.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade1', 'Oxente')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade1">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade1', 'Oxente')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Vixe Mainha <span class="caixa-principal-preco">19,99</span></h3>
+            <p>Pão de batata, carne de hambúrguer, fatias de bacon, queijo coalho na chapa, cebola caramelizada no molho
+                de orégano e alface.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade2', 'Vixe Mainha')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade2">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade2', 'Vixe Mainha')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Frango Cia <span class="caixa-principal-preco">21,99</span></h3>
+            <p>O Melhor Hambúrguer Artesanal 150g coberto com queijo cheddar fatiado e frango em cubos assado na chapa,
+                molho da casa, cebola caramelizada e salada.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade3', 'Frango Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade3">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade3', 'Frango Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Bacon Cia <span class="caixa-principal-preco">22,99</span></h3>
+            <p>O Melhor Hambúrguer Artesanal 150g coberto com queijo cheddar fatiado e fatias de bacon crocantes, molho
+                da casa, cebola caramelizada e salada.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade4', 'Bacon Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade4">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade4', 'Bacon Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Burger Cia <span class="caixa-principal-preco">14,99</span></h3>
+            <p>Delicioso hambúrguer com duas camadas de alface, deixando seu sanduíche mais nutritivo.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade5', 'Burger Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade5">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade5', 'Burger Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Calabresa Cia <span class="caixa-principal-preco">21,99</span></h3>
+            <p>O Melhor Hambúrguer Artesanal 150g coberto com queijo cheddar fatiado e calabresa em rodelas, molho da
+                casa, cebola caramelizada e salada.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade6', 'Calabresa Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade6">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade6', 'Calabresa Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="caixa-principal-direita-hamburgueres">
+        <div>
+            <h3>Cia Gourmet <span class="caixa-principal-preco">19,99</span></h3>
+            <p>O Tradicional Gourmet que não pode faltar. É formado pelo pão de batata, blend de 80g, muçarela e cebola
+                caramelizada no molho rosé.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade7', 'Cia Gourmet')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade7">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade7', 'Cia Gourmet')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Coração Cia <span class="caixa-principal-preco">23,99</span></h3>
+            <p>O Melhor Hambúrguer Artesanal 150g coberto com queijo cheddar fatiado e coração de galinha assado na
+                chapa, molho da casa, cebola caramelizada e salada.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade8', 'Coração Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade8">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade8', 'Coração Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Duplo Cia <span class="caixa-principal-preco">17,99</span></h3>
+            <p>Pão de Hambúrguer, molho rosé, 2 carnes de hambúrgueres e 2 queijos muçarela, 2 camadas de salada.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade9', 'Duplo Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade9">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade9', 'Duplo Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Filé Cia <span class="caixa-principal-preco">28,99</span></h3>
+            <p>O Melhor Hambúrguer Artesanal 150g coberto com queijo cheddar fatiado e filé mignon acebolado, queijo
+                coalho, molho da casa, cebola caramelizada e salada.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade10', 'Filé Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade10">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade10', 'Filé Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>X Burger Gourmet <span class="caixa-principal-preco">19,99</span></h3>
+            <p>Aquele sanduíche em dose dupla, formado por 2 hambúrgueres, cheddar em fatia, salada, cebola e muito
+                molho rosé, molho orégano.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade11', 'X Burguer Gourmet')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade11">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade11', 'X Burguer Gourmet')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <img src="./img/hamburguerfooter.png" alt="Imagem do footer">
+
+    <h1 id="bebidas">Bebidas</h1>
+
+    <div class="caixa-principal-esquerda">
+        <div>
+            <h3>Refrigerante Lata <span class="caixa-principal-preco">6,99</span></h3>
+            <p>Coca-Cola, Guaraná, Sprite, Fanta.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade12', 'Refrigerante Lata')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade12">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade12', 'Refrigerante Lata')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Refrigerante 600ml <span class="caixa-principal-preco">9,99</span></h3>
+            <p>Coca-Cola, Guaraná, Fanta.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade13', 'Refrigerante 600ml')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade13">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade13', 'Refrigerante 600ml')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Água Mineral <span class="caixa-principal-preco">4,99</span></h3>
+            <p>Com ou sem gás.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade14', 'Água Mineral')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade14">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade14', 'Água Mineral')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="caixa-principal-direita">
+        <div>
+            <h3>Suco Natural <span class="caixa-principal-preco">9,99</span></h3>
+            <p>Laranja, morango, limão ou maracujá.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade15', 'Suco Natural')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade15">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade15', 'Suco Natural')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Milkshake (300ml / 500ml) <span class="caixa-principal-preco">14,99 / 18,99</span></h3>
+            <p>Chocolate, morango, baunilha ou Ovomaltine.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade16', 'Milkshake (300ml / 500ml)')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade16">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade16', 'Milkshake (300ml / 500ml)')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Chopp Artesanal (300ml / 500ml) <span class="caixa-principal-preco">12,99 / 18,99</span></h3>
+            <p>Pilsen, IPA ou Stout.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade17', 'Chopp Artesanal (300ml / 500ml)')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade17">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade17', 'Chopp Artesanal (300ml / 500ml)')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h1 id="entradas">Entradas</h1>
+
+    <div class="caixa-principal-esquerda">
+        <div>
+            <h3>Batata Cia <span class="caixa-principal-preco">16,99</span></h3>
+            <p>Porção de batatas fritas crocantes acompanhada de molho especial da casa.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade18', 'Batata Cia')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade18">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade18', 'Batata Cia')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Batata Cia Cheddar & Bacon <span class="caixa-principal-preco">22,99</span></h3>
+            <p>Batatas fritas cobertas com cheddar cremoso e pedaços crocantes de bacon.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade19', 'Batata Cia Cheddar & Bacon')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade19">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade19', 'Batata Cia Cheddar & Bacon')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Onion Rings <span class="caixa-principal-preco">18,99</span></h3>
+            <p>Anéis de cebola empanados e fritos, servidos com molho especial.</p>
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade20', 'Onion Rings')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade20">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade20', 'Onion Rings')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="caixa-principal-direita">
+        <div>
+            <h3>Mini Burgers <span class="caixa-principal-preco">9,99</span></h3>
+            <p>Trio de mini hambúrgueres artesanais com queijo, molho da casa e alface.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade21', 'Mini Burgers')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade21">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade21', 'Mini Burgers')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+        <div>
+            <h3>Frango Crispy <span class="caixa-principal-preco"> 24,99</span></h3>
+            <p>Tirinhas de frango empanadas e crocantes, acompanhadas de molho barbecue.</p>
+
+            <div class="caixa-principal-quantidade">
+                <button onclick="quantidadePedido(this, 'quantidade22', 'Frango Crispy')" value="+"
+                    class="caixa-principal-quantidade-botao-somar">+</button>
+                <p id="quantidade22">0</p>
+                <button onclick="quantidadePedido(this, 'quantidade22', 'Frango Crispy')"
+                    class="caixa-principal-quantidade-botao-subtrair" value="-">-</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <h3 class="h3-pedidos" id="pedido">Pedidos</h3>
+
+    <table id="tabela-pedidos">
+        <thead>
+            <tr>
+                <th>Lanche</th>
+                <th>Quantidade</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <label for="mesa">Escolha sua mesa:</label>
+    <select id="mesa" name="mesa" required>
+        <option value="Mesa 1">Mesa 1</option>
+        <option value="Mesa 2">Mesa 2</option>
+        <option value="Mesa 3">Mesa 3</option>
+    </select>
+
+    <div class="pedido-botao">
+        <button class="whatsApp" onclick="enviarWhatsApp()">Enviar para WhatsApp</button>
+    </div>
+
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
