@@ -44,8 +44,8 @@ function quantidadePedido(valor, idParagrafo, nome) {
 
 // Função para enviar o pedido via WhatsApp
 function enviarWhatsApp() {
-  const mesa = document.getElementById("mesa").value; // Captura o valor do campo "mesa"
-  let mensagem = `${mesa}: \nPedido: \n`; // Adiciona a mesa à mensagem
+  const mesa = document.getElementById("mesa").value; 
+  let mensagem = `${mesa}: \nPedido: \n`; 
 
   const tabela = document.getElementById("tabela-pedidos").getElementsByTagName('tbody')[0];
 
@@ -59,7 +59,7 @@ function enviarWhatsApp() {
 
   // Codifica a mensagem para envio via URL
   const mensagemCodificada = encodeURIComponent(mensagem);
-  const numeroWhatsApp = "5575991110069"; // Substitua pelo número de destino
+  const numeroWhatsApp = "5575991110069"; 
   const url = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
 
   // Abre o WhatsApp com a mensagem pré-preenchida
