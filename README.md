@@ -52,8 +52,10 @@ Abaixo estão algumas capturas de tela do projeto **Burger Bliss**:
 <div align="center">
     <h3>🏠 Página Inicial</h3>
     <img src="img/home.png" alt="Home" width="70%">
-    
-    <h3>📦 Tela de Pedidos</h3>
+</div>
+
+<div align="center">
+   <h3>📦 Tela de Pedidos</h3>
     <img src="img/pedidos.png" alt="Pedidos" width="70%">
 </div>
 
