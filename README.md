@@ -46,12 +46,16 @@ O **Burger Bliss** é um site fictício de uma hamburgueria que combina design i
 ---
 
 ## 📸 Capturas de Tela
-(Adicione aqui imagens do projeto, se desejar. Para isso, coloque os arquivos na pasta do repositório e referencie-os assim:)
 
-```markdown
-![Screenshot 1](caminho/para/imagem1.png)
-![Screenshot 2](caminho/para/imagem2.png)
-```
+Abaixo estão algumas capturas de tela do projeto **Burger Bliss**:
+
+<div align="center">
+    <h3>🏠 Página Inicial</h3>
+    <img src="img/home.png" alt="Home" width="70%">
+    
+    <h3>📦 Tela de Pedidos</h3>
+    <img src="img/pedidos.png" alt="Pedidos" width="70%">
+</div>
 
 ---
 
